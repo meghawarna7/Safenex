@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply mx-1 sm:mx-2 md:mx-4 lg:mx-8 xl:mx-12; /* Apply a margin on the left and right */
+    @apply mx-1 sm:mx-2 md:mx-4 lg:mx-8 xl:mx-12 bg-green-200; /* Apply a margin on the left and right */
   }
   .swiper-custom-height {
     height: 100%; /* Full height */

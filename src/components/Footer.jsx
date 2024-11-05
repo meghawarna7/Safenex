@@ -1,65 +1,83 @@
-import React from 'react'
-import footerLogo  from "../assets/footer-logo.png"
-
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
+import footerLogo from "../assets/footer-logo.png";
+import compLogo from "../assets/safenax.png";
+import React from "react";
+import { GoTriangleRight } from "react-icons/go";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-4">
-      {/* Top Section */}
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        {/* Left Side - Logo and Nav */}
-        <div className="md:w-1/2 w-full">
-          <img src={footerLogo} alt="Logo" className="mb-5 w-36" />
-          <ul className="flex flex-col md:flex-row gap-4">
-            <li><a href="#home" className="hover:text-primary">Home</a></li>
-            <li><a href="#services" className="hover:text-primary">Services</a></li>
-            <li><a href="#about" className="hover:text-primary">About Us</a></li>
-            <li><a href="#contact" className="hover:text-primary">Contact</a></li>
-          </ul>
-        </div>
-
-        {/* Right Side - Newsletter */}
-        <div className="md:w-1/2 w-full">
-          <p className="mb-4">
-            Subscribe to our newsletter to receive the latest updates, news, and offers!
-          </p>
-          <div className="flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-4 py-2 rounded-l-md text-black"
-            />
-            <button className="bg-primary px-6 py-2 rounded-r-md hover:bg-primary-dark">
-              Subscribe
-            </button>
+    <footer className="bg-green-900 text-white py-8 px-4 rounded-lg">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-10">
+        
+        {/* Left Section */}
+        <div className="text-center md:text-left mb-6 md:mb-0 md:flex-1">
+          <img src={footerLogo} alt="Logo" className="mb-3 w-60 h-12 mx-auto md:mx-0" />
+          <p>FreshBowl</p>
+          <p>456 Orchard Street, Greenwood</p>
+          <div className="flex justify-center md:justify-start space-x-4 mt-4 pb-4 w-full">
+            <button className="text-white border border-white rounded-full px-4 py-2 bg-transparent hover:bg-white hover:text-green-900">Facebook</button>
+            <button className="text-white border border-white rounded-full px-4 py-2 bg-transparent hover:bg-white hover:text-green-900">X</button>
+            <button className="text-white border border-white rounded-full px-4 py-2 bg-transparent hover:bg-white hover:text-green-900">Youtube</button>
+            <button className="text-white border border-white rounded-full px-4 py-2 bg-transparent hover:bg-white hover:text-green-900">Instagram</button>
           </div>
         </div>
+
+        {/* Center Section */}
+        {/* Center Section */}
+<div className="text-center md:text-left mb-6 md:mb-0 md:flex-1">
+  <div className="flex flex-col space-y-2 justify-center">
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Help</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Shop</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Support</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Policies</a>
+    </div>
+  </div>
+</div>
+
+
+       {/* Right Section */}
+<div className="text-center md:text-left mb-10 md:mb-0 md:flex-1">
+  <div className="flex flex-col space-y-2 justify-center">
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Home</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Menu</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">About</a>
+    </div>
+    <div className="flex items-center space-x-2">
+      <GoTriangleRight className="text-white" />
+      <a href="#" className="hover:underline">Recipes</a>
+    </div>
+  </div>
+</div>
+
+       
       </div>
-
-      {/* Bottom Section */}
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center mt-10 border-t border-gray-700 pt-6">
-        {/* Left Side - Privacy Links */}
-        <ul className="flex gap-6 mb-4 md:mb-0">
-          <li><a href="#privacy" className="hover:text-primary">Privacy Policy</a></li>
-          <li><a href="#terms" className="hover:text-primary">Terms of Service</a></li>
-        </ul>
-
-        {/* Right Side - Social Icons */}
-        <div className="flex gap-6">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-            <FaFacebook size={24} />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-            <FaTwitter size={24} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-            <FaInstagram size={24} />
-          </a>
-        </div>
+      <div className="flex justify-center border-b border-white pb-4 w-full"></div>
+      <div className="text-center text-sm mt-6">
+        <p className="flex justify-center items-center space-x-2">
+          <img src={compLogo} alt="Logo" className="mb-0 w-34 h-7 mx-auto md:mx-0" />
+          <span>| This site is a demo project for testing purposes only.</span>
+        </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

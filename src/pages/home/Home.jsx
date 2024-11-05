@@ -1,16 +1,27 @@
 import React from 'react'
 import Banner from './Banner'
-import TopSellers from './TopSellers'
+
 import Recommended from './Recommended'
-import News from './News'
+
+import SameBanner from './SameBanner'
+
+
+import Banner3 from './Banner3'
+import Banner4 from './Banner4'
+import CategoryPage from './CategoryFilter'
+
 
 const Home = () => {
   return (
     <>
       <Banner/>
-      <TopSellers/>
+     
+     <Banner3/>
       <Recommended/>
-      <News/>
+      <SameBanner/>
+      <CategoryPage/>
+      <Banner4/>
+     
     </>
   )
 }
